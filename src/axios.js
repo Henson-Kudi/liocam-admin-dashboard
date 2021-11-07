@@ -1,14 +1,13 @@
 import axios from 'axios'
 
-const port = 'https://hk-solutions-accounting-app.herokuapp.com/'
-const localhost = 'http://localhost:5000'
+const port = process.env.PORT || 'http://localhost:5000'
 
 export const baseURL = axios.create({
-    baseURL: localhost,
+    baseURL: port,
     // withCredentials: true,
     headers: {
         'Content-Type': 'application/json',
         'Accept': '*/*',
-        'Origin': localhost
+        'Origin': port
     },
 })
