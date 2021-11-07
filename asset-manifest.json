@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/liocam-admin-dashboard/static/css/main.ee03bf17.chunk.css",
+    "main.js": "/liocam-admin-dashboard/static/js/main.b0569efb.chunk.js",
+    "main.js.map": "/liocam-admin-dashboard/static/js/main.b0569efb.chunk.js.map",
+    "runtime-main.js": "/liocam-admin-dashboard/static/js/runtime-main.7283f83d.js",
+    "runtime-main.js.map": "/liocam-admin-dashboard/static/js/runtime-main.7283f83d.js.map",
+    "static/css/2.f4c56af9.chunk.css": "/liocam-admin-dashboard/static/css/2.f4c56af9.chunk.css",
+    "static/js/2.a3a3fb51.chunk.js": "/liocam-admin-dashboard/static/js/2.a3a3fb51.chunk.js",
+    "static/js/2.a3a3fb51.chunk.js.map": "/liocam-admin-dashboard/static/js/2.a3a3fb51.chunk.js.map",
+    "index.html": "/liocam-admin-dashboard/index.html",
+    "static/css/2.f4c56af9.chunk.css.map": "/liocam-admin-dashboard/static/css/2.f4c56af9.chunk.css.map",
+    "static/css/main.ee03bf17.chunk.css.map": "/liocam-admin-dashboard/static/css/main.ee03bf17.chunk.css.map",
+    "static/js/2.a3a3fb51.chunk.js.LICENSE.txt": "/liocam-admin-dashboard/static/js/2.a3a3fb51.chunk.js.LICENSE.txt",
+    "static/media/liocam-logo.b1925105.jpg": "/liocam-admin-dashboard/static/media/liocam-logo.b1925105.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7283f83d.js",
+    "static/css/2.f4c56af9.chunk.css",
+    "static/js/2.a3a3fb51.chunk.js",
+    "static/css/main.ee03bf17.chunk.css",
+    "static/js/main.b0569efb.chunk.js"
+  ]
+}
