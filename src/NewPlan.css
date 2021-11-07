@@ -1,0 +1,158 @@
+.new-plan-container {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.new-plan-container h1 {
+  text-align: center;
+  padding: 0 0 0.2rem;
+  font-weight: 400;
+}
+
+.new-plan-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.new-plan-details .form-control {
+  display: flex;
+  flex: 1fr;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align-last: left;
+  margin-top: 0.5rem;
+}
+
+.new-plan-details .form-control input,
+.new-plan-details .form-control select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 0.5rem;
+}
+
+.plan-description-cont .description {
+  margin: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  font: 1.5rem "Roboto", sans-serif;
+  border-radius: 0.5rem;
+}
+
+.add-image-cont {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  border: 3px dashed gray;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.add-image-cont.active {
+  border: 3px dashed green;
+}
+
+.badfile {
+  border: 3px dashed red;
+}
+
+.add-image {
+  display: none;
+}
+
+.browse {
+  color: rgba(0, 0, 255, 0.9);
+  cursor: pointer;
+}
+
+.button-cont {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.button-cont .btn {
+  padding: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  border: unset;
+  cursor: pointer;
+}
+
+.button-cont .btn-sub {
+  background-color: var(--main-background);
+}
+
+.button-cont .btn-delete {
+  background-color: rgb(105, 6, 6);
+}
+
+.button-cont .btn a {
+  color: #fff;
+}
+
+.plans-and-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-files {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.plan-files .file {
+  padding: 0.2rem;
+  position: relative;
+  margin: 0.5rem;
+}
+
+.plan-files .file i.fas.fa-times {
+  position: absolute;
+  top: 0;
+  padding: 0.2rem;
+  color: var(--main-background);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .new-plan-details {
+    justify-content: space-between;
+  }
+
+  .new-plan-details .form-control {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .new-plan-details {
+    display: block;
+    justify-content: space-between;
+  }
+
+  .new-plan-details .form-control {
+    display: block;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .new-plan-details .form-control input,
+  .new-plan-details .form-control select {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .new-plan-container {
+    padding: 1rem 3rem;
+  }
+}

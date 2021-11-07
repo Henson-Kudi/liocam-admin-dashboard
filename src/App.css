@@ -1,38 +1,204 @@
-.App {
+.nav-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 2rem;
+  background: var(--main-background);
+  color: var(--main-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-logo-container {
+  height: 10rem;
+  width: 15%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-logo-container .nav-logo {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.options-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 1rem;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+.options-container .btn {
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  background: var(--main-background);
+  color: var(--main-color);
+  border: unset;
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.user-icon-cont {
+  text-align: right;
+}
+
+.options-container .btn,
+.user-icon-cont .fas.fa-user {
+  cursor: pointer;
+}
+
+.options-container .fas.fa-user {
+  font-size: 4rem;
+}
+
+.projects-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.filter-options {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+
+.filter-option {
+  padding: 0.75rem 0;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid var(--main-background);
+}
+
+.filterations {
+  margin: 2rem;
+}
+
+.filterations .form-control {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form-control .filter-input {
+  padding: 0.75rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.form-control .filter-input .select-option {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.projects-display-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+  justify-content: space-between;
+  max-height: 73.5vh;
+  overflow-y: auto;
+}
+
+.project-item {
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.project-item .item-image-container {
+  height: 100%;
+  width: 100%;
+}
+
+.item-image-container .item-image {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.project-item .text-cont {
+  position: absolute;
+  bottom: 0.5rem;
+  background: var(--main-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: opacity 200ms linear;
+  opacity: 0;
+  padding: 0.5rem;
+  max-height: 50%;
+}
+.project-item:hover .text-cont {
+  opacity: 1;
+}
+
+i.fas.fa-pen {
+  color: var(--main-background);
+  cursor: pointer;
+}
+
+i.fas.fa-trash {
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 20;
+}
+
+.delete-box-cont {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.delete-box-cont .delete-box {
+  width: max-content;
+  padding: 2rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  text-align: right;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 530px) {
+  .nav-section {
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-logo-container {
+    height: 7rem;
+    width: 10%;
+  }
+
+  .user-icon-cont .fas.fa-user {
+    font-size: 2rem;
+  }
+
+  .options-container .btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .project-item .text-cont {
+    opacity: 1;
   }
 }
